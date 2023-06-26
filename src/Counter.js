@@ -10,6 +10,7 @@ export default class Counter extends Component {
     }
 
     render() {
+        console.log("Render Counter App")
         return (
             <div>
                 <button onClick ={()=>this.changeCount(-1)}> -</button> 
@@ -26,5 +27,8 @@ export default class Counter extends Component {
         this.setState(prevState => {
             return {count: this.prevState.count + amount}
         })
+        // this.setState(prevState => {
+        //     return {count: this.prevState.count + amount}
+        // })
     }
 }
